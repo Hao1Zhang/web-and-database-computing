@@ -1,0 +1,99 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-06-30 03:44:08
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-06-30 15:59:04
+ * @FilePath     : \exam\web_project\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <!-- <script src="./javascripts/web.js" defer></script> -->
+    <script src="./javascripts/sign_in.js" defer></script>
+    <script src="./javascripts/post.js" defer></script>
+    <script src="./javascripts/order.js" defer></script>
+    <script src="./javascripts/search.js" defer></script>
+</head>
+
+<body onload = "books()">
+
+    <div class="header">
+        <!-- this logo is copied from web src = https://www.vectorstock.com/royalty-free-vector/bookstore-logo-template-design-logo-open-book-vector-23352609 -->
+        <a href="./index.html" class="logo"> <img src="./images/logo.jpg" alt="logo-name" /></a>
+        <!-- <div class="header-right"> -->
+        <div class="header-right">
+            <a href="./setting.html">Setting</a>
+            <a href="./history.html">Order History</a>
+        </div>
+        <input type="text" placeholder="Search for books by name or author" id = "search">
+        <button type="submit" onclick = "search_author()">search author</button>
+        <button type="submit" onclick = "search_book()">search book</button>
+        <!-- </div> -->
+
+    </div>
+    <hr>
+    <div class="main">
+        <a href="sign_in.html"><button>Sign in</button></a>
+
+        <div class="select_button">
+            <button onclick = "search_other()">search</button>
+        </div>
+        <div class="select">
+            <label for="cover">Cover Type:</label>
+            <select name="cover" id="cover">
+                <option value="all">all</option>
+                <option value="soft">soft</option>
+                <option value="hard">hard</option>
+            </select>
+        </div>
+        <div class="select">
+            <label for="category">Category:</label>
+            <select name="category" id="category">
+                <option value="all">all</option>
+                <option value="study">study</option>
+                <option value="entertainment">entertainment</option>
+            </select>
+        </div>
+        <div class="select">
+            <label for="price">Price:</label>
+            <select name="price" id="price">
+                <option value="none">none</option>
+                <option value="low_to_high">low to high</option>
+                <option value="high_to_low">high to low</option>
+            </select>
+        </div>
+
+        <div id="book_posts">
+            <!--<div id="book_post">-->
+            <!--    <button>Order</button>-->
+            <!--    <div class="books">-->
+            <!--        <div class="book_name">History of Computer</div>-->
+            <!--        <div class="information">-->
+            <!--            <div class="author">Author: Teacher</div>-->
+            <!--            <div class="cover_type">Cover type: Hard</div>-->
+            <!--            <div class="cover_type">Category: study</div>-->
+            <!--        </div>-->
+            <!--        <div class="price">$30</div>-->
+
+            <!--    </div>-->
+            <!--</div>-->
+
+        </div>
+
+
+    </div>
+    <br>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

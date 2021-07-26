@@ -1,0 +1,15 @@
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(133, 206, 255);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: blue;
+}

@@ -1,0 +1,64 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-14 18:44:12
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-14 19:36:04
+ * @FilePath     : \web_project\public\check_in.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check in</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="./javascripts/post.js" defer></script>
+</head>
+
+<body class="pure-g">
+
+
+    <header>
+        <div class="header">
+            <a href="./index.html" class="logo"> <img src="./images/logo.PNG" alt="logo-name" /></a>
+            <div class="header-right">
+                <a href="./index.html">Home</a>
+                <a href="a1788848@student.adelaide.edu.au">Contact</a>
+                <br>
+                <br>
+                <br>
+                <a href="./user_setting.html">Setting</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+
+    <main>
+        <div id="check_in_history">
+            <textarea rows="4" v-model="c_text" cols="60" id="check_in_text">{{c_text}}</textarea>
+            <button id="check_in_botton" class="pure-button" onclick="vueinst.c_arr.push(vueinst.c_text)">Add comment</button>
+            <br>
+            <button id="check_in_botton" class="pure-button" onclick="location.href='./user_setting.html'">User Setting</button>
+            <p v-for="line in c_arr">{{line}}</p>
+        </div>
+    </main>
+
+
+    <br>
+    <footer class="bottom">
+        <p><strong>More information about COVID-19:  </strong><a class="contact " href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">see this page</a></p>
+    </footer>
+</body>
+
+</html>

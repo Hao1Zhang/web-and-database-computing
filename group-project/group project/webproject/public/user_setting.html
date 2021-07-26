@@ -1,0 +1,80 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-14 18:21:15
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-14 19:37:40
+ * @FilePath     : \web_project\public\user_setting.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Setting</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+
+    <script src="./javascripts/web.js" defer></script>
+    <script src="./javascripts/sign_up.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="logo"> <img src="./images/logo.PNG" alt="logo-name" /></a>
+            <div class="header-right">
+                <a href="./index.html">Home</a>
+                <a href="a1788848@student.adelaide.edu.au">Contact</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="sign_in" class="input_table">
+            <form action="action_page.php">
+                <div class="container">
+                    <h1>User settings</h1>
+                    <hr>
+
+                    <label for="email"><b>User id:</b></label>
+                    <p>Axxxxxxxx</p>
+                    <br>
+                    <label for="email"><b>Email</b></label>
+                    <p>The user's login email</p>
+
+                    <label for="user_name"><b>Name</b></label>
+                    <input type="text" placeholder="Name" name="name" id="name">
+
+                    <label for="Address1"><b>Adress line 1</b></label>
+                    <input type="text" placeholder="Adress line 1" name="Address1" id="Address1">
+
+                    <label for="Address2"><b>Adress line 2</b></label>
+                    <input type="text" placeholder="Adress line 2" name="Address2" id="Address2">
+
+                    <label for="State"><b>State / postcode</b></label>
+                    <input type="text" placeholder="State / postcode" name="State" id="State">
+
+                    <label for="Contact number"><b>Contact number</b></label>
+                    <input type="text" placeholder="Contact number" name="Contact number" id="Contact number">
+                    <hr>
+
+                    <button type="submit" class="registerbtn" onclick="location.href='./check_in.html'">save</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <br>
+    <footer>
+        <p><strong>More information about COVID-19:  </strong><a class="contact " href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">see this page</a></p>
+    </footer>
+
+</body>
+
+</html>

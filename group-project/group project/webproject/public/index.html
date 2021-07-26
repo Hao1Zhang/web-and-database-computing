@@ -1,0 +1,63 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-13 11:24:08
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-14 19:09:54
+ * @FilePath     : \web_project\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracking</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <script src="./javascripts/web.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="logo"> <img src="./images/logo.PNG" alt="logo-name" /></a>
+            <div class="header-right">
+                <a href="./index.html">Home</a>
+                <a href="a1788848@student.adelaide.edu.au">Contact</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div id="sign_in" class="input_table">
+            <form action="action_page.php">
+                <div class="container">
+                    <h1>Sign in Here</h1>
+                    <hr>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    <hr>
+                    <button type="submit" class="registerbtn">Sign in</button>
+                </div>
+                <div class="container signin">
+                    <p>Don't have an account? <a href="./sign_up.html">Sign up</a>.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <br>
+    <footer>
+        <p><strong>More information about COVID-19:  </strong><a class="contact " href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">see this page</a></p>
+    </footer>
+</body>
+
+</html>

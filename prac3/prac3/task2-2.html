@@ -1,0 +1,46 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-03-26 10:41:16
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-03-26 11:04:27
+ * @FilePath     : \web and database\prac3\task2-2.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This page definitely has a title</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <ul id="list"></ul>
+    <p id="text"><strong>NOT</strong> working</p>
+
+    <script>
+        var users = ['Bob Lastname',
+            'Alice Person',
+            'Franco Familyname',
+            'Nona Surname',
+            'Umberto Lastname',
+            'Xia Person',
+            'Milton Surname',
+            'Louisa Familyname',
+            'Jia Person',
+            'Shannah Lastname',
+            'Deon Surname',
+            'Loreen Person'
+        ];
+        var list = document.getElementById("list");
+        for (var i = 0; i < users.length; i++) {
+            var li = document.createElement("LI"); //Create new <li>
+            var space = users[i].indexOf(' '); // Get location of space between firstname and surname
+            li.innerHTML = users[i].substring(0, space); // Extract firstname from users and populate <li>
+            list.appendChild(li); // append li to ul 
+        }
+        var p = document.getElementById("text");
+        p.innerHTML = "It <strong>IS</strong> working";
+    </script>
+</body>
+
+</html>

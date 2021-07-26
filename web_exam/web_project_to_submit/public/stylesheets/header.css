@@ -1,0 +1,74 @@
+/* Style the header with a grey background and some padding */
+
+.header {
+    overflow: hidden;
+    background-color: rgb(255, 212, 133);
+    padding: 20px 10px;
+}
+
+
+/* Style the header links */
+
+.header a {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+    width: 100px;
+    height: auto;
+}
+
+.header a img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Change the background color on mouse-over */
+
+.header a:hover {
+    background-color: rgb(255, 190, 68);
+    color: black;
+}
+
+
+/* Style the active/current link*/
+
+.header a.active {
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+
+.header input[type=text] {
+    align-items: center;
+    padding: 10px;
+    margin-top: -20px;
+    border: none;
+    margin-right: 16px;
+    margin-left: 150px;
+    font-size: 17px;
+    width: 60%;
+}
+
+.header button[type=submit] {
+    float: right;
+    margin-top: -15px;
+    margin-right: 6px;
+    background-color: rgb(253, 51, 0);
+    width: 139px;
+    height: 44px;
+    font-size: 20px;
+}
+
+.header-right {
+    float: right;
+}

@@ -1,0 +1,110 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-14 14:31:51
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-14 19:09:13
+ * @FilePath     : \web_project\public\sign_up.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./stylesheets/web.css"> -->
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <script src="./javascripts/web.js" defer></script>
+    <script src="./javascripts/sign_up.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="logo"> <img src="./images/logo.PNG" alt="logo-name" /></a>
+            <div class="header-right">
+                <a href="./index.html">Home</a>
+                <a href="a1788848@student.adelaide.edu.au">Contact</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="sign_up_table" class="row">
+            <div class="tab" class="col">
+                <button class="tablinks" onclick="sign_up_as(event, 'user')">sign up as user</button>
+                <button class="tablinks" onclick="sign_up_as(event, 'venue')">sign up as venue</button>
+            </div>
+            <div class="input_table" class="col">
+                <div id="user" class="tabcontent">
+                    <form action="action_page.php">
+                        <div class="container">
+                            <h1>Sing up as user</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                            <hr>
+                            <button type="submit" class="registerbtn">Register</button>
+                        </div>
+
+                        <div class="container signin">
+                            <p>Already have an account? <a href="./index.html">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="venue" class="tabcontent" style="display:none">
+                    <form action="action_page.php">
+                        <div class="container">
+                            <h1>Sing up as venue</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                            <label for="Address1"><b>Adress line 1</b></label>
+                            <input type="text" placeholder="Adress line 1" name="Address1" id="Address1" required>
+
+                            <label for="Address2"><b>Adress line 2</b></label>
+                            <input type="text" placeholder="Adress line 2" name="Address2" id="Address2" required>
+
+                            <label for="State"><b>State / postcode</b></label>
+                            <input type="text" placeholder="State / postcode" name="State" id="State" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                            <hr>
+                            <button type="submit" class="registerbtn">Register</button>
+                        </div>
+                        <div class="container signin">
+                            <p>Already have an account? <a href="./index.html">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p><strong>More information about COVID-19:  </strong><a class="contact " href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">see this page</a></p>
+    </footer>
+
+</body>
+
+</html>

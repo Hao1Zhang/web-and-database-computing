@@ -1,0 +1,65 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-06-30 03:44:08
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-06-30 16:28:36
+ * @FilePath     : \exam\web_project\public\sign_in.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <!-- <script src="./javascripts/web.js" defer></script> -->
+    <script src="./javascripts/sign_in.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- this logo is copied from web src = https://www.vectorstock.com/royalty-free-vector/bookstore-logo-template-design-logo-open-book-vector-23352609 -->
+        <a href="./index.html" class="logo"> <img src="./images/logo.jpg" alt="logo-name" /></a>
+        <!-- <div class="header-right"> -->
+        <div class="header-right">
+            <a href="./index.html">Back</a>
+        </div>
+        <!-- </div> -->
+
+    </div>
+    <hr>
+    <div class="main">
+        <!-- this div with class input table ,some style (input,button) is from the example on w3schools with some changes to fit in my page -->
+        <div id="sign_in" class="input_table">
+            <form>
+                <div class="container">
+                    <h1>Sign in</h1>
+                    <hr>
+                    <label for="user_name"><b>User name</b></label>
+                    <input type="text" placeholder="enter your user name" name="user_name" id="user_name" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="enter your password" name="psw" id="psw" required>
+                    <div>
+                        <p>not yet have account? <a href="./sign_up.html">Sign Up</a></p>
+                    </div>
+                    <hr>
+                    <button onclick="sign_in()" type="submit " class="registerbtn ">sign in</button>
+                </div>
+
+            </form>
+        </div>
+
+        <br>
+        <footer>
+        </footer>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-06-30 03:44:08
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-06-30 15:00:24
+ * @FilePath     : \exam\web_project\public\setting.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <script src="./javascripts/setting.js" defer></script>
+</head>
+
+<body onload = "load_user_infor()">
+
+    <div class="header">
+        <!-- this logo is copied from web src = https://www.vectorstock.com/royalty-free-vector/bookstore-logo-template-design-logo-open-book-vector-23352609 -->
+        <a href="./index.html" class="logo"> <img src="./images/logo.jpg" alt="logo-name" /></a>
+        <!-- <div class="header-right"> -->
+        <div class="header-right">
+            <a href="./history.html">Order History</a>
+            <a href="./index.html">Back</a>
+        </div>
+        <!-- </div> -->
+
+    </div>
+    <hr>
+    <div class="main">
+        <!-- this div with class input table ,some style (input,button) is from the example on w3schools with some changes to fit in my page -->
+        <div id="sign_in" class="input_table">
+            <form>
+                <div class="container">
+                    <h1>User settings</h1>
+                    <hr>
+
+                    <label for="email"><b>User id:</b></label>
+                    <p id="u_id"></p>
+                    <br>
+
+                    <label for="user_name"><b>user name</b></label>
+                    <input type="text" placeholder="" name="user_name" id="user_name" required>
+                    <label for="name"><b>real name</b></label>
+                    <input type="text" placeholder="" name="name" id="name" required>
+                    <label for="email"><b>email_address</b></label>
+                    <input type="text" placeholder="" name="email" id="email" required>
+
+                    <hr>
+
+                    <button onclick="save_user_setting()" type="submit " class="registerbtn ">save</button>
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <footer>
+        </footer>
+        </div>
+</body>
+
+</html>

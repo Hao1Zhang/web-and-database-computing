@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+#app {
+    color: #333533;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.dark_mode_class {
+    color: #F5CB5C;
+    background-color: #333533;
+}
+
+nav .pure-menu-link {
+    color: #CFDBD5;
+    font-weight: bold;
+}
+
+aside {
+    border-left: 1px solid #111111;
+}
+
+header,
+footer {
+    padding: 1em;
+    background-color: #F5CB5C;
+    color: #333533;
+}
+
+header {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #333533;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #333533;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.pure-button-active {
+    font-weight: bold;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.item {
+    clear: left;
+    padding: 0.5em 0;
+}
+
+#ad img {
+    max-width: 24em;
+    max-height: 24em;
+}
+
+#ad h2 {
+    text-align: center;
+}
+
+#stores img {
+    width: 6em;
+    float: right;
+    margin-left: 1em;
+}
+
+#items img {
+    width: 12em;
+    float: left;
+    margin-right: 1em;
+}

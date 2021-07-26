@@ -1,0 +1,112 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-07 14:12:06
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-07 17:43:59
+ * @FilePath     : \web and database\prac6\prac6.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Practical Excercise 6</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="prac6.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="prac6.js" defer></script>
+    <script src="Vue.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div id="app" v-bind:style=" dark_mode?'color:#F5CB5C; background-color:#333533':''">
+
+        <header>
+            <h1>Wendy's Delicious Condiments (and Fruit)</h1>
+            <nav class="pure-menu pure-menu-horizontal">
+                <ul id="topmenu" class="pure-menu-list">
+                    <li class="pure-menu-item" v-for="item in top_menu" :key="item.title">
+                        <a v-bind:href="item.url" class="pure-menu-link">{{item.title}}</a>
+                    </li>
+                </ul>
+                <div class="pure-menu">
+
+                    <ul id="submenu" class="pure-menu-list">
+
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="pad" id="ad" v-if="show_ad == true">
+            <button class="pure-button" style="float:right;" onclick="vueinst.show_ad = false;">close</button>
+            <img v-bind:src="special.url" alt="special.url" onclick="vueinst.special=SPECIALS[Math.floor((Math.random() * 3))];" />
+            <h3>{{special.name}}</h3>
+            <p>{{special.price}}</p>
+        </div>
+
+
+
+        <main class="pure-g" v-if="show_ad == false">
+
+            <div class="pad pure-u-2-3">
+                <div id="items">
+                    <input type="text" class="pure-u-3-4" /><button class="pure-button pure-u-1-4">Search</button>
+                </div>
+
+                <div id="comments">
+                    <textarea rows="4" v-model="c_text" cols="60" class="pure-u-1">{{c_text}}</textarea>
+                    <button class="pure-button pure-u-1-4" onclick="vueinst.c_arr.push(vueinst.c_text)">Add comment</button>
+                    <p v-for="line in c_arr">{{line}}</p>
+                </div>
+            </div>
+
+            <aside class="pad pure-u-1-3">
+
+                <h3>Salt or Pepper?</h3>
+                <!-- TASK 1.1 -->
+                <p id="sp">{{ choose }}</p>
+                <button class="pure-button pure-u-1-4" onclick="vueinst.choose='Salt';">Salt</button>
+                <button class="pure-button pure-u-1-4" onclick="vueinst.choose='Pepper!';">Pepper</button>
+
+                <hr />
+
+                <h3>Dark Mode:</h3>
+                <div class="pure-button-group" role="group" aria-label="Nightmode">
+                    <button class="pure-button" v-bind:class=" { 'pure-button-active': !dark_mode}" onclick="vueinst.dark_mode = false;">OFF</button>
+                    <button class="pure-button" v-bind:class="{ 'pure-button-active': dark_mode, 'pure-button-primary': dark_mode }" onclick="vueinst.dark_mode = true;">ON</button>
+                </div>
+
+                <hr />
+
+                <div id="stores">
+
+                </div>
+
+            </aside>
+
+
+
+        </main>
+
+
+        <footer>
+            <p>&copy; 2021 WDC</p>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

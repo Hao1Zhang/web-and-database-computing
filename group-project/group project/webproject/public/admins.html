@@ -1,0 +1,97 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-11 04:19:40
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-14 19:53:44
+ * @FilePath     : \web_project\public\admins.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>Admins</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/tables.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/web.css">
+
+    <script src="./javascripts/web.js" defer></script>
+    <script src="./javascripts/sign_up.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="logo"> <img src="./images/logo.PNG" alt="logo-name" /></a>
+            <div class="header-right">
+                <a href="./index.html">Home</a>
+                <a href="a1788848@student.adelaide.edu.au">Contact</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <br>
+    <main class="main_bg" id="sec1_photo">
+
+        <h3> Admins</h3>
+
+        <div id="hotspot-list" class="list_1">
+
+            hotspot:<input type="text" id="hotspot" size='5' /> time:
+            <input type="text" id="time" size='5' />
+            <input type="button" value="insert" onclick="add();" />
+            <table align="center" id="itable" border="1" ondblclick="get(event);">
+                <tr>
+                    <th>select</th>
+                    <th>hotspot</th>
+                    <th>time</th>
+                    <th>delect</th>
+                </tr>
+            </table>
+            <input type="button" value="select all" onclick="selectAll();" />
+            <input type="button" value="delete selected" onclick="deleteAll();" />
+            <!--
+
+        <ul>  hotspot1:<input type=" " value=" "><button> X </button> </ul>
+        <ul>  hotspot2:<input type=" " value=""><button> X </button> </ul>
+        <ul>  hotspot3:<input type=" " value=""><button> X </button></ul>
+	    <ul>  hotspot4:<input type=" " value=""><button> X </button></ul>
+	     <textarea rows="4" cols="60" >Add New Hotspot with Time Here...</textarea>
+	     <button v-on:click="add_somefunctionHere()" >Add </button>
+	     -->
+            <br>
+
+
+
+
+        </div>
+        <hr>
+        <div>
+            <h2>Search Check-in history</h2>
+            <input class="admin_search" type="text" placeholder="User ID / Venue ID">
+
+            <br>
+            <button class="button_left">Search User</button>
+            <button class="button_right">Search Venue</button>
+            <br>
+            <h4>Hotspot Cases Map</h4>
+
+
+    </main>
+    <br>
+    <footer>
+        <p><strong>More information about COVID-19:  </strong><a class="contact " href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">see this page</a></p>
+    </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>

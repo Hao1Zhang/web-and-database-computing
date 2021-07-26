@@ -1,0 +1,284 @@
+/*
+admains.html
+*/
+
+h1,
+h2,
+h4 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: grey;
+}
+
+header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 0px 10px;
+    padding-bottom: 60px;
+}
+
+
+/*
+border {
+    border:1px solid black;
+    border-width: 5px
+}
+
+.main_bg{
+    background-color: rgb(245, 212, 142);
+}
+*/
+
+#sec1_photo {
+    /* height: 100vh; */
+    /* background-attachment: fixed; */
+    background-image: url("../images/human.jpg");
+    background-size: 100%;
+    width: cover;
+    padding: 6em 0;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.c {
+    /*border:3px solid black;*/
+    height: 900px;
+    width: 1850px;
+}
+
+.itable {
+    border: 1;
+    text-align: center;
+}
+
+.admin_search {
+    display: block;
+    margin: 0 auto;
+}
+
+.list_1 {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 4px solid black;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    background-color: #f8f8ff;
+    color: black;
+    box-shadow: 2px 4px 6px #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.table button {
+    width: 35px;
+    height: 25px;
+    background-color: blue;
+}
+
+.button_left {
+    margin-left: 800px;
+    float: left;
+    width: 120px;
+    height: 25px;
+    background-color: #1689F0;
+}
+
+.button_right {
+    margin-right: 800px;
+    float: right;
+    width: 120px;
+    height: 25px;
+    background-color: #1689F0;
+}
+
+.map_1 {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid #F00;
+    height: 180px;
+    width: 800px;
+    text-align: center;
+    box-shadow: 2px 4px 6px #000;
+    border-color: white;
+}
+
+.buttom_jump_to_signup {
+    margin-right: 360px;
+    float: right;
+    width: 120px;
+    height: 20px;
+    background-color: #004b88;
+    color: #FFFFFF;
+    border-color: #004b88;
+}
+
+.center {
+    font-style: center;
+    text-align: center;
+}
+
+.a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 674px;
+    height: 174px;
+    background-color: yellow;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.login {
+    width: 330px;
+    height: 330px;
+}
+
+.table_1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.b {
+    width: 330px;
+    height: 336px;
+    visibility: visible
+}
+
+
+/*
+user_check in.html
+*/
+
+.login_1 {
+    font-family: 'Playfair Display', serif;
+    float: left;
+    background-color: rgb(0, 120, 230);
+    margin-top: 20px;
+    color: white;
+    margin-left: 100px;
+}
+
+.setting_1 {
+    font-family: 'Playfair Display', serif;
+    float: right;
+    background-color: rgb(0, 120, 230);
+    margin-top: 20px;
+    color: white;
+    margin-right: 100px;
+}
+
+body,
+#app {
+    color: #333533;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.code_area {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 4px 20px #000;
+    margin-top: 100px;
+}
+
+.textarea_center {
+    text-align: center;
+    color: black;
+}
+
+.button_3 {
+    width: 120px;
+    height: 25px;
+    background-color: #1689F0;
+}
+
+.map_2 {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid #F00;
+    height: 180px;
+    width: 800px;
+    font-style: center;
+    text-align: center;
+    box-shadow: 2px 4px 6px #000;
+    border-color: white;
+}
+
+#sec2_photo {
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url("/web_project/public/images/blue.jpg");
+    background-size: 100%;
+    color: white;
+    padding: 6em 0;
+}
+
+
+/*
+venue.html
+*/
+
+.input_1 {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #004b88;
+}
+
+.Venue_History {
+    height: 300px;
+    width: 600px;
+    border: 1px solid #f0e68c;
+    border-radius: 30px;
+    box-shadow: 1px 4px 20px #000;
+    margin-top: 100px;
+    margin: 0 auto;
+    font-style: center;
+    text-align: center;
+}
+
+#sec3_photo {
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url("/web_project/public/images/5.png");
+    background-size: 100%;
+    color: white;
+    padding: 7em 0;
+}
+
+#p_blue {
+    color: #004b88;
+    font-weight: bold;
+}
+
+
+/*
+Sign_up.html
+*/
+
+#sec4_photo {
+    height: 100vh;
+    background-image: url("/web_project/public/images/6.png");
+    background-size: 100%;
+    color: white;
+    padding: 7em 0;
+}
+
+#sign_for_1 {
+    height: 300px;
+    width: 400px;
+    margin-left: 750px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 1px 4px 20px #000;
+    font-style: center;
+    text-align: center;
+}

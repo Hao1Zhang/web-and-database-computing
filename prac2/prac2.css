@@ -1,0 +1,111 @@
+/* 2.2 */
+h1.first-try{
+    font-family: sans-serif;
+}
+p.first-try{
+    font-family: serif;
+}
+a.first-try{
+    color:darkgreen;
+}
+del.first-try{
+    color:grey;
+}
+mark.first-try{ 
+    color: darkblue;
+    background-color: pink;
+}
+h2.first-try{
+    text-align:left;
+    font-family: sans-serif;
+}
+pre.first-try{
+    font-family: monospace;
+}
+/* 2.4 */
+body{
+    background-image: url("/web图片/cross.png");
+    background-color: #DCF5F5;
+}
+/* 2.5 */
+div#content {
+    background-color: white;
+    
+}
+span.blue {
+    color:blue;
+}
+span.fancy {
+    font-family:cursive;
+}
+/* 2.7 */
+div#nestedbox {
+    background-color:white;
+    border: 1px solid black;
+    border-radius:8px;
+}
+div.outer-div-1{
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+div.inner-div-1{
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    text-align: right;
+    border-width: 174px 674px;
+    border: 1px solid red;
+}
+ div.outer-div-2{
+    background-color: blue;
+    margin-top: 20px;
+    padding: 0;
+    border: 1px solid red;
+ }
+
+ div.inner-div-2{
+    background-color: yellow;
+    margin: auto;
+    padding: 12px;
+    text-align: right;
+    width: 374px;
+    height: 374px;
+    border: 1px solid red;
+   
+}
+/* 2.9 */
+ul.dottedlist{
+    list-style: square;
+}
+ol.romannumber{
+    list-style: lower-roman;
+}
+li.horizontal{
+    display: inline;
+    float: left;
+}
+ul.horizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkgrey;
+
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color:lightgrey;
+    color:darkgrey;
+}

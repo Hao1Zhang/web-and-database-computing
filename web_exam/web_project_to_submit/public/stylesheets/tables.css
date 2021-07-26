@@ -1,0 +1,62 @@
+.input_table * {
+    box-sizing: border-box
+}
+
+
+/* Add padding to containers */
+
+.input_table .container {
+    font: 13px sans-serif;
+}
+
+
+/* Full-width input fields */
+
+.input_table input[type=text],
+.input_table input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.input_table input[type=text]:focus,
+.input_table input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/register button */
+
+.input_table .registerbtn {
+    background-color: rgb(255, 68, 68);
+    color: white;
+    padding: 24px 10px;
+    padding-bottom: 40px;
+    margin: 1px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.input_table .registerbtn:hover {
+    opacity: 1;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.input_table .signin {
+    text-align: center;
+}
+
+#sign_in {
+    overflow: hidden;
+    padding: 15px 12px;
+    width: 98%;
+    background-color: rgb(255, 212, 133);
+}

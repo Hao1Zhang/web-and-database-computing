@@ -1,0 +1,52 @@
+<!--
+ * @Author       : Hao Zhang
+ * @Date         : 2021-05-21 10:53:13
+ * @LastEditors  : Hao Zhang
+ * @LastEditTime : 2021-05-21 11:04:39
+ * @FilePath     : \prac7\public\prac8_1-3.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prac 8</title>
+    <meta content="">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Sentence Builder</h1>
+        <label for="suffix">Suffix</label><input id="suffix" type="text" />
+        <label for="lines">Lines</label><textarea id="lines"></textarea>
+        <button onclick="send()">Submit</button>
+        <pre id="output"></pre>
+
+    </main>
+
+    <script>
+        function send() {
+
+            var lines = document.getElementById("lines").value.split('\n');
+            var suffix = document.getElementById("suffix").value;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("output").innerText = this.responseText;
+                }
+            };
+            xhttp.open("POST", "/combine", true);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send(JSON.stringify({
+                lines: lines,
+                suffix: suffix
+            }));
+
+        }
+    </script>
+
+</body>
+
+</html>

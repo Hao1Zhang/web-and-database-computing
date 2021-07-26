@@ -1,0 +1,2 @@
+"file:/home/ubuntu/wdc/prac2/prac2/validate_with_vNu/validatethis1.html":0.1-0.16: error: Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.
+"file:/home/ubuntu/wdc/prac2/prac2/validate_with_vNu/validate.css":6.2-7.1: error: CSS: Parse Error.
